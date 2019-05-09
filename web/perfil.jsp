@@ -18,12 +18,15 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+      <%
+                            Usuario u = (Usuario)session.getAttribute("user");
+                            session.setAttribute("user",u);
+                            String NomUsuario = u.getNomUsuario();
+                                %>
     <!-- Dropdown Structure -->
     <ul id="dropdown" class="dropdown-content">
-      <li><a href="registrarUsuario.jsp">Registro</a></li>
-      <li class="divider"></li>  
-      <li><a href="catalogofotografos.jsp">Catálogo<br>Fotógrafos</a></li>
-      <li class="divider"></li>  
+      <li><a href="Controller/CerrarSesion.jsp">Cerrar<br>Sesión</a></li>
+      <li class="divider"></li> 
       <li><a href="FAQs.html">Soporte</a></li>
       <li class="divider"></li>  
       <li><a href="index.html">DERBILD</a></li>
@@ -52,8 +55,7 @@
         			<img class="img-responsive img-portfolio img-hover" src="img/profile.jpg" style="width: 100px; height: 100px">
         		</div>
                         
-        			<p class="text-center"><strong>NombreCliente ApellidoCliente</strong></p>
-	        		<p class="text-center"><em>Perfil de usuario</em></p>
+        			<p class="text-center"><strong>Perfil de <em><%=NomUsuario%></em></strong></p>
 
         		<div class="col-md-12 text-center">
     		       <!-- Redes sociales-->
@@ -76,13 +78,10 @@
 
         		<div class="col-md-12">
         		<!-- Barra vertical de opciones del perfil de usuairo -->
-        			<br >
+        			<br>
         			<ul class="list-group list-primary">
-        				<a href="#" class="list-group-item">Ver perfil público</a>
-        				<a href="#" class="list-group-item">Mi perfil</a>
-        				<a href="#" class="list-group-item">Fotografia</a>
-        				<a href="#" class="list-group-item">Cuenta</a>
-        				<a href="#" class="list-group-item">Preferencias</a>
+        				<a href="#" class="list-group-item">Editar perfil</a>
+                                        <br>
     				</ul>
     			</div>
                 <!-- Fin Barra vertical de opciones del perfil de usuario -->

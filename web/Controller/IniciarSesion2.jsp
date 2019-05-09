@@ -20,7 +20,7 @@
             }else{
                 HttpSession sesion = request.getSession();
                 sesion.setAttribute("user", u);
-                response.sendRedirect("../Menu2.jsp");
+                response.sendRedirect("../perfil.jsp");
             }
         %>
     </body>
