@@ -74,20 +74,18 @@
           <!-- Promo Content 1 goes here -->
         </div>
         <div class="col s4">
-          <form name="form" class="col s12" action="Controller/IniciarSesion2.jsp" method="POST">
+          <form name="form" class="col s12" action="Controller/SesionF.jsp" method="POST">
           <div class="row">
            <div class="input-field col s12">
              <i class="material-icons prefix">account_circle</i>
-             <input id="Usuario" type="text" class="validate" name="NomUsuario" oncopy="return false"
-                    onpaste="return false" pattern="[A-Za-z0-9]{1,8}" required>
+             <input id="Usuario" type="text" class="validate" name="NomUsu" oncopy="return false" onpaste="return false" pattern="[A-Za-z0-9]{1,8}" required>
              <label for="icon_prefix" data-success="Correcto" data-error="Mal">Usuario</label>
            </div>
           </div>
           <div class="row">
            <div class="input-field col s12">
              <i class="material-icons prefix">lock</i>
-             <input id="Contraseña" type="password" class="validate" name="Pass" oncopy="return false" 
-                    onpaste="return false" pattern="[A-Za-z0-9]{1,8}" required>
+             <input id="Contraseña" type="password" class="validate" name="Contra" oncopy="return false" onpaste="return false" pattern="[A-Za-z0-9]{1,8}" required>
              <label for="icon_password" data-success="Correcto" data-error="Mal">Contraseña</label>
            </div>   
           </div>

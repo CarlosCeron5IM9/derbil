@@ -1,6 +1,6 @@
 
 <%@page import="model.*"%>
-<%@page import="java.sql.*"%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
@@ -13,7 +13,7 @@
       <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.js"></script> 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
        <style>body {
-        background-image: url("https://images.wallpaperscraft.com/image/beach_girl_jump_photograph_company_street_people_64439_2560x1440.jpg");
+        background-image: url("https://images.wallpaperscraft.com/image/silhouette_photographer_person_123085_2560x1440.jpg");
         background-color: #cccccc;
         background-position: center;
         background-repeat: no-repeat;}
@@ -91,10 +91,12 @@
           </div>
           <div class="row">
            <div class="input-field col s12">
-             <center>
+             
              <button class="btn waves-effect waves-light" type="submit" name="action">Buscar
              <i class="material-icons right">search</i>
-             </button></center>
+             </button>
+               <input class="btn btn-danger" type="button" onclick="location.href='catalogofotografos.jsp'" value="Regresar"/>
+               
            </div>   
           </div>
           </form>

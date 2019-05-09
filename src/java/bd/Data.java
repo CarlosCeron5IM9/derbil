@@ -21,6 +21,7 @@ public class Data {
         Usuario u = null;
         if (rs.next()) {
             u = new Usuario();
+            
             u.setRol(rs.getInt(1));
             u.setIdUser(rs.getInt(2));
             u.setNomUsuario(rs.getString(3));
@@ -30,6 +31,37 @@ public class Data {
         return u;
     }
 
+     public Fotografos getFotografos(String NomUsu, String Contra) throws SQLException {
+        query = "select * from Fotografos where NomUsu = '" + NomUsu + "' and Contra = '" + Contra + "';";
+        rs = c.ejecutarSelect(query);
+        Fotografos f = null;
+        if (rs.next()) {
+            f=new Fotografos();
+            
+            f.setFoto(rs.getString(1));
+            f.setIdFotog(rs.getInt(2));
+            f.setApP(rs.getString(3));
+            f.setApM(rs.getString(4));
+            f.setNom(rs.getString(5));
+            f.setEdad(rs.getInt(6));
+            f.setSexo(rs.getString(7));
+            f.setExp(rs.getString(8));
+            f.setTipoF(rs.getString(9));
+            f.setDes(rs.getString(10));
+            f.setDeleg(rs.getString(11));
+            f.setCol(rs.getString(12));
+            f.setCP(rs.getInt(13));
+            f.setCalle(rs.getString(14));
+            f.setNumEI(rs.getString(15));
+            f.setCorreo(rs.getString(16));
+            f.setTel(rs.getInt(17));
+            f.setCosto(rs.getString(18));
+            f.setNomUsu(rs.getString(19));
+            f.setContra(rs.getString(20));
+        }
+        c.desconectar();
+        return f;
+    }
   /*  
     
     public Rol getRol(int IdRol) throws SQLException {
@@ -87,17 +119,17 @@ public class Data {
         c.desconectar();
     }
 
-    public Fotografos setFotografos(String ApP, String ApM, String Nom, int Edad, String Sexo, String Exp,
+    public void setFotografos(String Foto, String ApP, String ApM, String Nom, int Edad, String Sexo, String Exp,
             String TipoF, String Des, String Deleg, String Col, int CP, String Calle, String NumEI,
-            String Correo, int Tel, String Costo) throws SQLException {
-        query = "Insert into Fotografos values ('" + ApP + "','" + ApM + "','" + Nom + "',"
+            String Correo, int Tel, String Costo, String NomUsu, String Contra) throws SQLException {
+        query = "Insert into Fotografos values ('" + Foto + "',null,'" + ApP + "','" + ApM + "','" + Nom + "',"
                 + "'" + Edad + "','" + Sexo + "','" + Exp + "','" + TipoF + "','" + Des + "',"
                 + "'" + Deleg + "','" + Col + "','" + CP + "','" + Calle + "','" + NumEI + "',"
-                + "'" + Correo + "','" + Tel + "','"+Costo+"');";
+                + "'" + Correo + "','" + Tel + "','"+Costo+"','"+NomUsu+"','"+Contra+"');";
         c.ejecutar(query);
 
         c.desconectar();
-        return null;
+        
     }
     
      
@@ -109,7 +141,7 @@ public class Data {
         if (rs.next()) {
             f = new Fotografos();
 
-            f.setIdUserF(rs.getInt(1));
+            f.setFoto(rs.getString(1));
             f.setIdFotog(rs.getInt(2));
             f.setApP(rs.getString(3));
             f.setApM(rs.getString(4));
@@ -139,7 +171,7 @@ public class Data {
         if (rs.next()) {
             f = new Fotografos();
 
-            f.setIdUserF(rs.getInt(1));
+            f.setFoto(rs.getString(1));
             f.setIdFotog(rs.getInt(2));
             f.setApP(rs.getString(3));
             f.setApM(rs.getString(4));
@@ -169,7 +201,7 @@ public class Data {
         if (rs.next()) {
             f = new Fotografos();
 
-            f.setIdUserF(rs.getInt(1));
+            f.setFoto(rs.getString(1));
             f.setIdFotog(rs.getInt(2));
             f.setApP(rs.getString(3));
             f.setApM(rs.getString(4));
@@ -199,7 +231,7 @@ public class Data {
         if (rs.next()) {
             f = new Fotografos();
 
-            f.setIdUserF(rs.getInt(1));
+            f.setFoto(rs.getString(1));
             f.setIdFotog(rs.getInt(2));
             f.setApP(rs.getString(3));
             f.setApM(rs.getString(4));
@@ -229,7 +261,7 @@ public class Data {
         if (rs.next()) {
             f = new Fotografos();
 
-            f.setIdUserF(rs.getInt(1));
+            f.setFoto(rs.getString(1));
             f.setIdFotog(rs.getInt(2));
             f.setApP(rs.getString(3));
             f.setApM(rs.getString(4));
@@ -265,7 +297,7 @@ public class Data {
         if (rs.next()) {
             f = new Fotografos();
 
-            f.setIdUserF(rs.getInt(1));
+            f.setFoto(rs.getString(1));
             f.setIdFotog(rs.getInt(2));
             f.setApP(rs.getString(3));
             f.setApM(rs.getString(4));

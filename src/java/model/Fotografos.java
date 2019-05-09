@@ -3,7 +3,7 @@ package model;
 
 public class Fotografos {
     
-    private int IdUserF;
+    private String Foto;
     private int IdFotog;
     private String ApP;
     private String ApM;
@@ -21,6 +21,27 @@ public class Fotografos {
     private String Correo;
     private int Tel;
     private String Costo;
+    private String NomUsu;
+    private String Contra;
+    
+
+    public String getNomUsu() {
+        return NomUsu;
+    }
+
+    public void setNomUsu(String NomUsu) {
+        this.NomUsu = NomUsu;
+    }
+
+    public String getContra() {
+        return Contra;
+    }
+
+    public void setContra(String Contra) {
+        this.Contra = Contra;
+    }
+
+  
 
     public String getCosto() {
         return Costo;
@@ -30,13 +51,15 @@ public class Fotografos {
         this.Costo = Costo;
     }
 
-    public int getIdUserF() {
-        return IdUserF;
+    public String getFoto() {
+        return Foto;
     }
 
-    public void setIdUserF(int IdUserF) {
-        this.IdUserF = IdUserF;
+    public void setFoto(String Foto) {
+        this.Foto = Foto;
     }
+
+
 
     public int getIdFotog() {
         return IdFotog;

@@ -1,6 +1,5 @@
-
-<%@page import="model.Usuario"%>
-<%@page import="bd.Data"%>
+<%@page import="model.Fotografos"%>
+<%@page import="bd.*"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -11,17 +10,17 @@
     <body>
         <%
             Data d = new Data();
-            String NomUsuario = request.getParameter("NomUsuario");
-            String Pass = request.getParameter("Pass");
-            Usuario u = d.getUsuario(NomUsuario, Pass);
+            String NomUsu = request.getParameter("NomUsu");
+            String Contra = request.getParameter("Contra");
+            Fotografos f = d.getFotografos(NomUsu, Contra);
             
-            if(u == null){
+            if(f == null){
                 response.sendRedirect("../error.jsp");
             }else{
                 HttpSession sesion = request.getSession();
-                sesion.setAttribute("user", u);
+                sesion.setAttribute("user", f);
                 
-                    response.sendRedirect("../index.jsp");
+                    response.sendRedirect("../index2.jsp");
                 
             }
         %>

@@ -7,48 +7,51 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Registrado.</title>
         <script>
             function ok(){
             alert("Usuario Regitrado");
-            window.location="Menu2.jsp";
+            window.location="Sesion.jsp";
             
         }
         </script>
     </head>
     <body>
         <%
-            Usuario u = (Usuario)session.getAttribute("user");
-            session.setAttribute("user",u);
+            
             Data d= new Data();
             
-            String ApP2= request.getParameter("ApP");
-            String ApM2= request.getParameter("ApM");
-            String Nom2 = request.getParameter("Nom");
-            String Eda2 = request.getParameter("Edad");
-            int Edad2 = Integer.parseInt(Eda2);
-            String Sexo2 = request.getParameter("Sexo");
-            String Exp2 = request.getParameter("Exp");
-            String TipoF2 = request.getParameter("TipoF");
-            String Des2 = request.getParameter("Des");
-            String Deleg2 = request.getParameter("Deleg");
-            String Col2 = request.getParameter("Col");
+            String Foto = request.getParameter("Foto");
+            String ApP= request.getParameter("ApP");
+            String ApM= request.getParameter("ApM");
+            String Nom = request.getParameter("Nom");
+            String Eda = request.getParameter("Edad");
+            int Edad = Integer.parseInt(Eda);
+            String Sexo = request.getParameter("Sexo");
+            String Exp = request.getParameter("Exp");
+            String TipoF = request.getParameter("TipoF");
+            String Des = request.getParameter("Des");
+            String Deleg = request.getParameter("Deleg");
+            String Col = request.getParameter("Col");
             String CP1 = request.getParameter("CP");
-            int CP2 = Integer.parseInt(CP1);
-            String Calle2 = request.getParameter("Calle");
-            String NumEI2 = request.getParameter("NumEI");
-            String Correo2 = request.getParameter("Correo");
-            String Te2 = request.getParameter("Tel");
-            int Tel2 = Integer.parseInt(Te2);
+            int CP = Integer.parseInt(CP1);
+            String Calle = request.getParameter("Calle");
+            String NumEI = request.getParameter("NumEI");
+            String Correo = request.getParameter("Correo");
+            String Te = request.getParameter("Tel");
+            int Tel = Integer.parseInt(Te);
+            String Costo = request.getParameter("Costo");
+            String NomUsu = request.getParameter("NomUsu");
+            String Contra = request.getParameter("Contra");
             
             
             
-            if(u != null){
+           
             //int IdUserF2 = u.getIdUser();
-            Fotografos f =d.setFotografos2(1,ApP2, ApM2, Nom2, Edad2, Sexo2, Exp2, TipoF2, Des2, Deleg2, Col2, CP2, Calle2, NumEI2, Correo2, Tel2, Costo);
+            d.setFotografos(Foto, ApP, ApM, Nom, Edad, Sexo, Exp, TipoF, Des, Deleg, Col, CP, Calle, NumEI, Correo, Tel, Costo, NomUsu, Contra);
             
             out.println("<script>ok();</script>");
-            } 
+             
         %>
     </body>
 </html>

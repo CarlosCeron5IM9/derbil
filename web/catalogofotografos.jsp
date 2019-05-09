@@ -1,6 +1,5 @@
 
 <%@page import="model.*"%>
-<%@page import="java.sql.*"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
@@ -13,7 +12,7 @@
       <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.js"></script> 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
        <style>body {
-        background-image: url("https://images.wallpaperscraft.com/image/silhouette_photographer_person_123085_2560x1440.jpg");
+        background-image: url("https://images.wallpaperscraft.com/image/photographer_hood_camera_138197_2560x1440.jpg");
         background-color: #cccccc;
         background-position: center;
         background-repeat: no-repeat;}
@@ -83,7 +82,7 @@
                                         <br><br>
                                         <button style="color: white" class="btn badge" onclick="location.href='catalogoDeleg.jsp'">Ubicación</button>
                                         <br><br>
-                                        <button style="color: white" class="btn badge" onclick="location.href='catalogoTipoF.jsp'">Tipo de fotografías</button>
+                                        <button style="color: white" class="btn badge" onclick="location.href='catalogoTipoF.jsp'">Tipo de fotografía</button>
                                         <br><br>
                                         <button style="color: white" class="btn badge" onclick="location.href='catalogoExp.jsp'">Experiencia</button>
                                         
