@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Galeria Privada</title>
+
+    <!--  CSS de Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Librería jQuery requerida por los plugins de JavaScript -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <!-- Librería jQuery personalizada-->
+    <script src="js/jquery-example.js"></script>
+    
+    <!-- Todos los plugins JavaScript de Bootstrap (también puedes incluir archivos JavaScript individuales de los únicos plugins que utilices) -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Referencia a otro archivo css propio, donde se realizan las modificaciones css de los componentes y elementos -->
+    <link href="css/personalizado.css" rel="stylesheet">
+    <!-- Referencia a otro archivo css propio, donde se realizan las modificaciones css de la página principal -->
+    <link href="css/starter-template.css" rel="stylesheet">
+    
+
+</head>
+
+<body>
+
+    <!-- Se configura el menú superior-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>""
+          <a class="navbar-brand" href="Profile.html"><img src="img/Derbild.png" style="width: auto; height:90%; display: inline-block; clear: both; "> Derbild</a>
+        </div>
+        <!-- Se especifica los elementos que dispondremos en el menú superior-->
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="Profile.html">Perfil</a></li>
+            <li><a href="Galeria.html">Galeria Privada</a></li>
+            <li><a href="Catalogo.html">Catalogo</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contenido de la página -->
+    <div class="container">
+
+        <!-- Encabezado de página / Breadcrumb -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">Galeria Privada</h1>
+                <ol class="breadcrumb">
+                    <li><a href="index1.html">Index</a></li>
+
+                </ol>
+            </div>
+        </div>
+        <!-- Fin Encabezado de página / Breadcrumb -->
+
+        <!-- Contact Form -->
+        <!-- Campos del formulario de contacto con validación de campos-->
+        <div class="row">
+            <!-- Columna de la izquierda -->
+        	<div class="col-md-3">
+        		<div class="col-md-12" align="center">
+        			<img class="img-responsive img-portfolio img-hover" src="img/profile.jpg">
+        		</div>
+        		<div class="col-md-12">
+        			<p class="text-center"><strong>Nombre Apellido</strong></p>
+	        		<p class="text-center"><em>Perfil de usuario</em></p>
+        		</div>
+
+        		<div class="col-md-12 text-center">
+    		       <!-- Redes sociales-->
+	               <ul class="list-unstyled list-inline list-social-icons">
+                        <li>
+                            <a href="https://es-la.facebook.com/"><i class="editIcons icon-facebook-square editSizeIcons"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/"><i class="editIcons icon-linkedin-square editSizeIcons"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/?lang=es"><i class="editIcons icon-twitter-square editSizeIcons"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/discover"><i class="editIcons icon-google-plus-square editSizeIcons"></i></a>
+                        </li>
+                    </ul>
+                    <!-- Fin redes sociales -->
+        		</div>
+
+        		<div class="col-md-12">
+        		<!-- Barra vertical de opciones del perfil de usuairo -->
+        			<br >
+        			<ul class="list-group list-primary">
+        				<a href="Perfil.html" class="list-group-item">Ver perfil público</a>
+        				<a href="Profile.html" class="list-group-item">Mi perfil</a>
+        				<a href="Galeria.html" class="list-group-item">Fotografia</a>
+    				</ul>
+    			</div>
+                <!-- Fin Barra vertical de opciones del perfil de usuario -->
+        	</div>
+            <!-- Fin de Columna de la izquierda -->
+
+            <!-- Parte central -->
+            <div class="col-md-9">
+                <div class="col-md-12" style="border-width: 1px 1px 0px 1px; border-style: solid; border-color: lightgrey;">
+                    <h3 style="text-align: center">Crear Galeria</h3>
+                </div>
+                <!-- Se inicia el form (ojo todos los elementos de formulario deben ir dentro de esta etiqueta-->
+                <form name="modifyProfile" id="profileForm" novalidate>
+                <!-- Inicio del div central parte de formulario información básica -->
+                <div class="col-md-12" style="border-width: 1px 1px 0px 1px; border-style: solid; border-color: lightgrey; background: #f1f3f6;">
+                	<div class="col-md-8 col-md-offset-2">
+    	                
+    	                    <div class="control-group form-group">
+    	                        <div class="controls">
+    	                        	<br >
+    	                            <label>Información de la Galeria</label>
+    	                            <span id="alertCliente" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
+    	                            	<input type="text" class="form-control" id="txtCliente" placeholder="Introduzca el Cliente" required data-validation-required-message="Por favor introduzca el nombre del cliente.">
+    	                            </span>
+    	                            <br >
+    	                        <!--    <span id="alertPassGal" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
+    	                            	<input type="text" class="form-control" id="txtPassGal" placeholder="Introduzca su contraseña" required data-validation-required-message="Por favor introduzca una contraseña.">
+    	                            </span>
+    	                            <br > -->
+    	                            <span id="alertFotografias" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
+                                        <input type="file" class="form-control" id="txtFoto" placeholder="Introduzca sus Fotografias" required data-validation-required-message="Por favor introduzca sus fotografias.">
+    	                            </span>
+    	                            <p class="help-block"></p>
+                                    <br>
+                                    <button type="button" id="btnSubir" class="btn btn-warning">Subir</button>
+    	                        </div>
+    	                    </div>
+                    </div>
+                </div>
+                <!-- Fin del div central parte de formulario información básica -->
+
+            </form>
+            <!-- Fin del form -->
+            </div>  
+            <!-- Fin del div de parte central -->
+        </div>
+        <!-- Fin Campos del formulario de contacto con validación de campos -->
+        &nbsp;
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12 footer-align">
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+</body>
+
+</html>
