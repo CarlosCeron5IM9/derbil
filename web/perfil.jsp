@@ -26,7 +26,9 @@
     <!-- Dropdown Structure -->
     <ul id="dropdown" class="dropdown-content">
       <li><a href="Controller/CerrarSesion.jsp">Cerrar<br>Sesión</a></li>
-      <li class="divider"></li> 
+      <li class="divider"></li>
+      <li><a href="catalogofotografos.jsp">Catálogo<br>Fotógrafos</a></li>
+      <li class="divider"></li>
       <li><a href="FAQs.html">Soporte</a></li>
       <li class="divider"></li>  
       <li><a href="index.html">DERBILD</a></li>
