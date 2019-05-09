@@ -11,7 +11,7 @@
       <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.js"></script> 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
       <style>body {
-        background-image: url("https://images.wallpaperscraft.com/image/starry_sky_man_stars_138111_2560x1440.jpg");
+        background-image: url("https://images.wallpaperscraft.com/image/silhouette_sunset_pole_133985_3840x2400.jpg");
         background-color: #cccccc;
         background-position: center;
         background-repeat: no-repeat;}
@@ -46,9 +46,7 @@
   <body oncopy="return false" onpaste="return false" pattern="[A-Za-z0-9]{1,8}">
     <!-- Dropdown Structure -->
     <ul id="dropdown" class="dropdown-content">
-      <li><a href="IniciarSesion.jsp">Iniciar<br>Sesión</a></li>
-      <li class="divider"></li>  
-      <li><a href="catalogofotografos.jsp">Catálogo<br>Fotógrafos</a></li>
+      <li><a href="Sesion.jsp">Iniciar<br>Sesión</a></li>
       <li class="divider"></li>  
       <li><a href="FAQs.html">Soporte</a></li>
       <li class="divider"></li> 

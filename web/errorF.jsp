@@ -36,7 +36,7 @@
            <ul class="nav navbar-nav">
             <li><a href="catalogofotografos.jsp">Catálogo</a></li>
             <li><a href="soporte.jsp">Soporte</a></li>
-            <li class="active"><a href="IniciarSesion.jsp">Iniciar sesión</a></li>
+            <li class="active"><a href="Sesion.jsp">Iniciar sesión</a></li>
             <li><a href="registrarUsuario.jsp">Registrarse</a></li>
           </ul>
           </ul>
@@ -44,6 +44,6 @@
       </div>
     </nav>
         <h1>¡ERROR!</h1>
-        No existe el usuario, <a href="index2.jsp">REGRESAR</a>.
+        No existe el usuario, <a href="Sesion.jsp">REGRESAR</a>.
     </body>
 </html>

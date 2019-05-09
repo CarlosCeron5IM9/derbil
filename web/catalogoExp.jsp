@@ -32,11 +32,11 @@
                                 %>
       <li><a href="registrarUsuario.jsp">Registro</a></li>
       <li class="divider"></li>
-      <li><a href="registrarUsuario.jsp">Iniciar<br>Sesión</a></li>
+      <li><a href="IniciarSesion.jsp">Iniciar<br>Sesión</a></li>
       <li class="divider"></li>
       <li><a href="FAQs.html">Soporte</a></li>
       <li class="divider"></li>  
-      <li><a href="index.html">DERBILD</a></li>
+      <li><a href="index.jsp">DERBILD</a></li>
       <%
                             }else{
                         %>
@@ -48,7 +48,7 @@
       <li class="divider"></li> 
       <li><a href="FAQs.html">Soporte</a></li>
       <li class="divider"></li>  
-      <li><a href="index.html">DERBILD</a></li>
+      <li><a href="index.jsp">DERBILD</a></li>
       <%
                         }
                         %>

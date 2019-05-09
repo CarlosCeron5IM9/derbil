@@ -52,7 +52,7 @@
       <li class="divider"></li>  
       <li><a href="FAQs.html">Soporte</a></li>
       <li class="divider"></li> 
-      <li><a href="index.html">DERBILD</a></li>
+      <li><a href="index.jsp">DERBILD</a></li>
       
     </ul>
     <nav>

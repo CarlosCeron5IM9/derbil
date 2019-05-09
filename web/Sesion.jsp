@@ -45,9 +45,7 @@
   <body>
     <!-- Dropdown Structure -->
     <ul id="dropdown" class="dropdown-content">
-      <li><a href="registrarUsuario.jsp">Registro</a></li>
-      <li class="divider"></li>  
-      <li><a href="catalogofotografos.jsp">Catálogo<br>Fotógrafos</a></li>
+      <li><a href="registrarFotografo.jsp">Registro</a></li>
       <li class="divider"></li>  
       <li><a href="FAQs.html">Soporte</a></li>
       <li class="divider"></li>  
@@ -100,7 +98,7 @@
           <div class="row">
            <div class="input-field col s12">
              <center>
-               Si no tienes cuenta <a href="registrarUsuario.jsp">registrate aquí.</a>
+               Si no tienes cuenta <a href="registrarFotografo.jsp">registrate aquí.</a>
              </center>
            </div>   
           </div>

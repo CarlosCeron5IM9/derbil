@@ -10,7 +10,7 @@
         <%
             HttpSession sesion = request.getSession();
             sesion.removeAttribute("user");
-            response.sendRedirect("../index.jsp");
+            response.sendRedirect("../Sesion.jsp");
         %>
     </body>
 </html>

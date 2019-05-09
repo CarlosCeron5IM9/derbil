@@ -15,7 +15,7 @@
             Fotografos f = d.getFotografos(NomUsu, Contra);
             
             if(f == null){
-                response.sendRedirect("../error.jsp");
+                response.sendRedirect("../errorF.jsp");
             }else{
                 HttpSession sesion = request.getSession();
                 sesion.setAttribute("user", f);

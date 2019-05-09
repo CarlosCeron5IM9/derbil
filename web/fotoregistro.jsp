@@ -10,7 +10,7 @@
         <title>Registrado.</title>
         <script>
             function ok(){
-            alert("Usuario Regitrado");
+            alert("Fotógrafo Regitrado");
             window.location="Sesion.jsp";
             
         }
